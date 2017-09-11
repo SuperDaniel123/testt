@@ -10,8 +10,16 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var htmlReplace = require('gulp-html-replace')
 
+
+
 gulp.task('html',function(){
     gulp.src(['src/**/*.html','index.html'])
+		.pipe(htmlReplace({
+			head:gulp.src('./src/html/common/header.html'),
+			aside:gulp.src('./src/html/common/aside.html'),
+			style:gulp.src('./src/html/common/style.html')
+		}))
+
         .pipe(htmlmin({
 		collapseWhitespace:true,
 	    minifyJS:true,
@@ -19,6 +27,7 @@ gulp.task('html',function(){
 		removeComments:true
 	}))
 	.pipe(gulp.dest('dist'))
+
 
 })
 

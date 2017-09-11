@@ -7,6 +7,7 @@ $('#login-form').on('submit',function(){
         success:function(data){
             if(data.code == 200){
                 alert('登陆成功')
+                localStorage.setItem('userinfo',JSON.stringify(data.result))
                 location.href='/dist/index.html';
             }
             else{
@@ -19,3 +20,4 @@ $('#login-form').on('submit',function(){
     })
     return false
 })
+
