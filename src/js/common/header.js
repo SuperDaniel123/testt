@@ -1,7 +1,7 @@
 /**
  * Created by SuperDaniel on 2017/9/10.
  */
-$('#back_to').on('click',function(){
+$('.back_to').on('click',function(){
     $.ajax({
         type:'get',
         url:'/v6/logout',
