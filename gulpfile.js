@@ -8,7 +8,7 @@ var concat = require('gulp-concat');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var htmlReplace = require('gulp-html-replace')
+var htmlReplace = require('gulp-html-replace');
 
 
 
@@ -44,7 +44,8 @@ gulp.task('less',function(){
 var jsLibs=[
 	'node_modules/art-template/lib/template-web.js',
 	'node_modules/jquery/dist/jquery.js',
-	'node_modules/bootstarp/dist/js/bootstrap.js'
+	'node_modules/bootstarp/dist/js/bootstrap.js',
+	'node_modules/jquery.cookie/jquery.cookie.js'
 ]
 
 gulp.task('jsLib',function(){
