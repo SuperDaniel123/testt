@@ -1,3 +1,9 @@
+var userinfo = JSON.parse(localStorage.getItem('userinfo')) || {};
+var tc_avatar = userinfo.tc_avatar || '/public/img/default.png';
+$('.avatar img').attr('src',tc_avatar)
+
+
+
 $('#login-form').on('submit',function(){
     var that = $(this)
     $.ajax({
