@@ -1,11 +1,9 @@
 require('../common/header.js')
 require('../common/aside.js')
+require('../common/loading.js')
+require('../common/common.js')
 
-$.ajax({
-    url:'/v6/category',
-    type:'GET',
-    success:function(data){
-        $('.table-bordered').append(template('tableList',data.result))
-    }
-})
+$.get('/v6/category', function(data) {
+    $('.table-bordered').append(template('category-list-tpl', data.result));
+});
 

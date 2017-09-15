@@ -45,7 +45,9 @@ var jsLibs=[
 	'node_modules/art-template/lib/template-web.js',
 	'node_modules/jquery/dist/jquery.js',
 	'node_modules/bootstarp/dist/js/bootstrap.js',
-	'node_modules/jquery.cookie/jquery.cookie.js'
+	'node_modules/jquery.cookie/jquery.cookie.js',
+	'node_modules/nprogress/nprogress.js',
+	'node_modules/jquery-form/dist/jquery.form.min.js'
 ]
 
 gulp.task('jsLib',function(){

@@ -1,6 +1,7 @@
 require('../common/header.js')
 require('../common/aside.js')
-
+require('../common/loading.js')
+require('../common/common.js')
 $.ajax({
     url:'/v6/course',
     success:function(data){

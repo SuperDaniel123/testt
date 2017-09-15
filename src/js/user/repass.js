@@ -1,5 +1,8 @@
 require('../common/header.js')
 require('../common/aside.js')
+require('../common/common.js')
+require('../common/loading.js')
+
 
 $('.form-horizontal').on('submit',function(){
     if($('#input-pass').val() != $('#input-pass-repeat').val()){
